@@ -81,10 +81,10 @@ The dashboard is structured to show:
 - Across records that received a benchmark category, most observations fall into No Different rather than Better or Worse. Among rated records, 84.4% are No Different, 9.4% are Worse, and 6.3% are Better. This indicates a modest skew toward underperformance relative to the benchmark, but the dominant pattern is still that most hospital-measure observations are classified as not materially different from the national benchmark.
   
 - The most differentiated measures are the three hospital return days metrics. These show the clearest spread between relative outperformers and underperformers:
-* _Hospital return days for pneumonia patients: 767 Better, 1,284 Worse, 1,587 No Different_
-* _Hospital return days for heart failure patients: 748 Better, 1,007 Worse, 1,400 No Different_
-* _Hospital return days for heart attack patients: 276 Better, 546 Worse, 733 No Different_
-* _These measures provide the strongest separation between hospitals in the comparison categories._
+  * _Hospital return days for pneumonia patients: 767 Better, 1,284 Worse, 1,587 No Different_
+  * _Hospital return days for heart failure patients: 748 Better, 1,007 Worse, 1,400 No Different_
+  * _Hospital return days for heart attack patients: 276 Better, 546 Worse, 733 No Different_
+  * _These measures provide the strongest separation between hospitals in the comparison categories._
 
 
 ## How to Read the Dashboard
