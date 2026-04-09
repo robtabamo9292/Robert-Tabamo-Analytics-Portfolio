@@ -74,10 +74,15 @@ The dashboard is structured to show:
 
 ## Key Findings
 
-- Average reported CMS scores vary meaningfully across measures, which suggests that different quality metrics operate on very different baseline levels.
-- State-level averages show visible variation, though interpretation should be cautious because reporting mix differs across states and territories.
-- Compared-to-national categories are not evenly distributed across measures, with some measures clustering more heavily in “No Different” style categories and others showing wider spread.
-- The hospital drilldown is most useful when interpreted within a single selected measure rather than as an overall hospital ranking.
+The dataset contains 67,046 hospital-measure records across 14 CMS measures and 4,789 hospitals. The score scales vary substantially by measure, so raw averages are not directly comparable across measures. For example, average measure scores range from 1.01 for the Ratio of unplanned hospital visits after hospital outpatient surgery to 19.71 for the Heart failure (HF) 30-Day Readmission Rate. The measure comparison view is therefore best read as a within-measure overview, not as a single cross-measure ranking.
+Data completeness varies sharply by measure. Overall, 35,280 records (52.6%) have valid numeric scores and 31,766 (47.4%) do not. The most complete measure is Hybrid Hospital-Wide All-Cause Readmission (HWR), with 4,217 valid scores and an 88.1% valid-score rate. The sparsest is CABG readmission, with only 878 valid scores and an 18.3% valid-score rate. Measures with high invalid-score rates are much less reliable for hospital-level comparison.
+Across records that received a benchmark category, most observations fall into No Different rather than Better or Worse. Among rated records, 84.4% are No Different, 9.4% are Worse, and 6.3% are Better. This indicates a modest skew toward underperformance relative to the benchmark, but the dominant pattern is still that most hospital-measure observations are classified as not materially different from the national benchmark.
+The most differentiated measures are the three hospital return days metrics. These show the clearest spread between relative outperformers and underperformers:
+* _Hospital return days for pneumonia patients: 767 Better, 1,284 Worse, 1,587 No Different_
+* _Hospital return days for heart failure patients: 748 Better, 1,007 Worse, 1,400 No Different_
+* _Hospital return days for heart attack patients: 276 Better, 546 Worse, 733 No Different_
+* _These measures provide the strongest separation between hospitals in the comparison categories._
+
 
 ## How to Read the Dashboard
 
