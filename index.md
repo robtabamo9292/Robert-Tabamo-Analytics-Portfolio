@@ -24,6 +24,8 @@ I approached the project using the **Ask → Prepare → Process → Analyze →
 
 ## Tools Used
 
+- Tableau
+- CMS Provider Data
 - Python
 - NumPy
 - Matplotlib
@@ -35,6 +37,56 @@ I approached the project using the **Ask → Prepare → Process → Analyze →
 - Are certain hospital types associated with better or worse results?
 - Is there any visible relationship between overall hospital rating and the selected quality measures?
 
-## Notes
+## Dashboard
 
-This project is descriptive and exploratory. It is meant to surface patterns in public CMS data, not make causal claims about hospital quality.
+I built an interactive Tableau dashboard using CMS hospital quality data to explore patterns in unplanned hospital visits and readmission-related performance across hospitals, states, and measures.
+
+The dashboard includes:
+- average score by measure
+- average score by state
+- compared-to-national breakdown by measure
+- hospital-level drilldown for a selected measure
+
+### Dashboard Overview
+
+![Hospital Dashboard Overview](assets/images/dashboard-overview.png)
+
+### Selected Measure Example
+
+![Dashboard with Selected Measure](assets/images/dashboard-selected-measure.png)
+
+### Hospital Drilldown
+
+![Hospital Drilldown](assets/images/hospital-drilldown.png)
+
+### Compared Group by Measure
+
+![Compared Group by Measure](assets/images/compared-group-by-measure.png)
+
+## Methodology
+
+I used CMS Unplanned Hospital Visits hospital-level data to build an interactive Tableau dashboard. I cleaned score fields, filtered invalid values, grouped CMS comparison labels into broader categories, and created views at the measure, state, and hospital level.
+
+The dashboard is structured to show:
+- broad measure-level comparisons
+- state-level average comparisons
+- compared-to-national category distributions
+- hospital-level rankings for a selected measure
+
+## Key Findings
+
+- Average reported CMS scores vary meaningfully across measures, which suggests that different quality metrics operate on very different baseline levels.
+- State-level averages show visible variation, though interpretation should be cautious because reporting mix differs across states and territories.
+- Compared-to-national categories are not evenly distributed across measures, with some measures clustering more heavily in “No Different” style categories and others showing wider spread.
+- The hospital drilldown is most useful when interpreted within a single selected measure rather than as an overall hospital ranking.
+
+## How to Read the Dashboard
+
+- **Avg Score by Measure** shows average reported scores across CMS measures.
+- **Avg Score by State** compares average scores across states and territories.
+- **Compared Group by Measure** shows how hospitals are distributed across CMS comparison categories.
+- **Hospital Drilldown** updates based on the selected measure and helps identify relative leaders for that metric.
+
+## Limitations
+
+This dashboard is descriptive and exploratory. It is intended to surface patterns in publicly available CMS data, not make causal claims about hospital quality. Results should be interpreted within the context of each selected CMS measure rather than as a single overall ranking of hospitals.
