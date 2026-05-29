@@ -1,17 +1,13 @@
 :root {
   --bg: #F6F3EE;
   --surface: #FFFFFF;
-  --hero: #232734;
-  --nav: #2D3240;
+  --hero: #0B1F3A;
+  --nav: #102A4C;
   --text: #1F2430;
   --muted: #5F6775;
   --accent: #C6AE7B;
   --accent-dark: #AE9461;
   --border: #E7E1D8;
-  --hero: #232734;
-  --nav: #2D3240;
-  --hero: #0B1F3A;
-  --nav: #102A4C;
 }
 
 body {
