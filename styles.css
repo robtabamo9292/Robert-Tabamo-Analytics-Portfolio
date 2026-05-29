@@ -8,6 +8,10 @@
   --accent: #C6AE7B;
   --accent-dark: #AE9461;
   --border: #E7E1D8;
+  --hero: #232734;
+  --nav: #2D3240;
+  --hero: #0B1F3A;
+  --nav: #102A4C;
 }
 
 body {
@@ -177,7 +181,7 @@ body {
 }
 
 .btn-dark:hover {
-  background: #1A1E2A;
+  background: #102A4C;
 }
 
 .btn-light {
